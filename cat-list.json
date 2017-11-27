@@ -1,0 +1,290 @@
+[
+  {
+    "link": "/discover/playlist/?cat=%E5%8D%8E%E8%AF%AD",
+    "name": "华语"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E6%AC%A7%E7%BE%8E",
+    "name": "欧美"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E6%97%A5%E8%AF%AD",
+    "name": "日语"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E9%9F%A9%E8%AF%AD",
+    "name": "韩语"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E7%B2%A4%E8%AF%AD",
+    "name": "粤语"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E5%B0%8F%E8%AF%AD%E7%A7%8D",
+    "name": "小语种"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E6%B5%81%E8%A1%8C",
+    "name": "流行"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E6%91%87%E6%BB%9A",
+    "name": "摇滚"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E6%B0%91%E8%B0%A3",
+    "name": "民谣"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E7%94%B5%E5%AD%90",
+    "name": "电子"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E8%88%9E%E6%9B%B2",
+    "name": "舞曲"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E8%AF%B4%E5%94%B1",
+    "name": "说唱"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E8%BD%BB%E9%9F%B3%E4%B9%90",
+    "name": "轻音乐"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E7%88%B5%E5%A3%AB",
+    "name": "爵士"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E4%B9%A1%E6%9D%91",
+    "name": "乡村"
+  },
+  {
+    "link": "/discover/playlist/?cat=R%26B%2FSoul",
+    "name": "R&B/Soul"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E5%8F%A4%E5%85%B8",
+    "name": "古典"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E6%B0%91%E6%97%8F",
+    "name": "民族"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E8%8B%B1%E4%BC%A6",
+    "name": "英伦"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E9%87%91%E5%B1%9E",
+    "name": "金属"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E6%9C%8B%E5%85%8B",
+    "name": "朋克"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E8%93%9D%E8%B0%83",
+    "name": "蓝调"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E9%9B%B7%E9%AC%BC",
+    "name": "雷鬼"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E4%B8%96%E7%95%8C%E9%9F%B3%E4%B9%90",
+    "name": "世界音乐"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E6%8B%89%E4%B8%81",
+    "name": "拉丁"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E5%8F%A6%E7%B1%BB%2F%E7%8B%AC%E7%AB%8B",
+    "name": "另类/独立"
+  },
+  {
+    "link": "/discover/playlist/?cat=New%20Age",
+    "name": "New Age"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E5%8F%A4%E9%A3%8E",
+    "name": "古风"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E5%90%8E%E6%91%87",
+    "name": "后摇"
+  },
+  {
+    "link": "/discover/playlist/?cat=Bossa%20Nova",
+    "name": "Bossa Nova"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E6%B8%85%E6%99%A8",
+    "name": "清晨"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E5%A4%9C%E6%99%9A",
+    "name": "夜晚"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E5%AD%A6%E4%B9%A0",
+    "name": "学习"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E5%B7%A5%E4%BD%9C",
+    "name": "工作"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E5%8D%88%E4%BC%91",
+    "name": "午休"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E4%B8%8B%E5%8D%88%E8%8C%B6",
+    "name": "下午茶"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E5%9C%B0%E9%93%81",
+    "name": "地铁"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E9%A9%BE%E8%BD%A6",
+    "name": "驾车"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E8%BF%90%E5%8A%A8",
+    "name": "运动"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E6%97%85%E8%A1%8C",
+    "name": "旅行"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E6%95%A3%E6%AD%A5",
+    "name": "散步"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E9%85%92%E5%90%A7",
+    "name": "酒吧"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E6%80%80%E6%97%A7",
+    "name": "怀旧"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E6%B8%85%E6%96%B0",
+    "name": "清新"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E6%B5%AA%E6%BC%AB",
+    "name": "浪漫"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E6%80%A7%E6%84%9F",
+    "name": "性感"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E4%BC%A4%E6%84%9F",
+    "name": "伤感"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E6%B2%BB%E6%84%88",
+    "name": "治愈"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E6%94%BE%E6%9D%BE",
+    "name": "放松"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E5%AD%A4%E7%8B%AC",
+    "name": "孤独"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E6%84%9F%E5%8A%A8",
+    "name": "感动"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E5%85%B4%E5%A5%8B",
+    "name": "兴奋"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E5%BF%AB%E4%B9%90",
+    "name": "快乐"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E5%AE%89%E9%9D%99",
+    "name": "安静"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E6%80%9D%E5%BF%B5",
+    "name": "思念"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E5%BD%B1%E8%A7%86%E5%8E%9F%E5%A3%B0",
+    "name": "影视原声"
+  },
+  {
+    "link": "/discover/playlist/?cat=ACG",
+    "name": "ACG"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E6%A0%A1%E5%9B%AD",
+    "name": "校园"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E6%B8%B8%E6%88%8F",
+    "name": "游戏"
+  },
+  {
+    "link": "/discover/playlist/?cat=70%E5%90%8E",
+    "name": "70后"
+  },
+  {
+    "link": "/discover/playlist/?cat=80%E5%90%8E",
+    "name": "80后"
+  },
+  {
+    "link": "/discover/playlist/?cat=90%E5%90%8E",
+    "name": "90后"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E7%BD%91%E7%BB%9C%E6%AD%8C%E6%9B%B2",
+    "name": "网络歌曲"
+  },
+  {
+    "link": "/discover/playlist/?cat=KTV",
+    "name": "KTV"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E7%BB%8F%E5%85%B8",
+    "name": "经典"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E7%BF%BB%E5%94%B1",
+    "name": "翻唱"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E5%90%89%E4%BB%96",
+    "name": "吉他"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E9%92%A2%E7%90%B4",
+    "name": "钢琴"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E5%99%A8%E4%B9%90",
+    "name": "器乐"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E5%84%BF%E7%AB%A5",
+    "name": "儿童"
+  },
+  {
+    "link": "/discover/playlist/?cat=%E6%A6%9C%E5%8D%95",
+    "name": "榜单"
+  },
+  {
+    "link": "/discover/playlist/?cat=00%E5%90%8E",
+    "name": "00后"
+  }
+]
