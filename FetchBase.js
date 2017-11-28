@@ -26,11 +26,18 @@ class FetchBase{
      * 初始化变量
      */
     initVar(){
-        this.timeHandler && clearTimeout(this.timeHandler);
+        this.clearTimeout();
         // 资源请求id集合
         this.requestArr = [];
         // 资源请求返回id集合
         this.receiveArr = [];
+    }
+
+    /**
+     * 清理定时器
+     */
+    clearTimeout(){
+        this.timeHandler && clearTimeout(this.timeHandler);
     }
 
     /**
@@ -81,8 +88,12 @@ class FetchBase{
      * @returns {Promise.<void>}
      */
     async createPage(){
-        const instance = await phantom.create();
+        const instance = await phantom.create(['--load-images=no']);
         const page = await instance.createPage();
+        // page.setting('localToRemoteUrlAccessEnabled', true);
+
+        // page.settings.loadImages = false;
+        // page.settings.XSSAuditingEnabled = true;
 
         // 监听资源请求和返回
         page.on('onResourceRequested', this.onResourceRequested.bind(this));
@@ -101,6 +112,7 @@ class FetchBase{
      * @param requestData
      */
     onResourceRequested(requestData) {
+        typeof this.requestBeforeCB === 'function' && this.requestBeforeCB(requestData);
         // 过滤掉图片和轮询接口
         if(!(/\.(jpg|png|gif)/.test(requestData.url) || /weblog/.test(requestData.url))){
             this.requestArr.push(requestData.id);
@@ -114,6 +126,8 @@ class FetchBase{
     onResourceReceived(requestData) {
         let id = requestData.id;
         let stage = requestData.stage;
+
+        if(stage === 'end') typeof this.receiveBeforeCB === 'function' && this.receiveBeforeCB(requestData);
         // 过滤掉图片和轮询接口
         if(!(/\.(jpg|png|gif)/.test(requestData.url) || /weblog/.test(requestData.url))){
             // 检测资源是否在请求资源队列中

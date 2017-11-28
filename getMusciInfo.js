@@ -7,6 +7,12 @@ const fs = require('fs');
  * 获取分类列表
  */
 class getMusciInfo extends FetchBase{
+    constructor(url, delay){
+        super(url, delay);
+        this.checkMp3 = false;
+        this.musicUrl = '';
+    }
+
     parserDom($){
         // 歌名
         let name = $('.m-lycifo .cnt .tit .f-ff2');
@@ -45,10 +51,31 @@ class getMusciInfo extends FetchBase{
             commentCount,
             lyric
         }
-        // 写入文件
-        fs.writeFile('song-'+ this.getSongId() +'.json', JSON.stringify(obj), function (err) {
-            console.log('write end ' + (err ? 'fail' : 'success'));
-        })
+
+        if(!this.checkMp3){
+            this.checkMp3 = true;
+            this.initVar();
+            this.addPlayUrl(obj);
+        }
+    }
+
+    /**
+     * 添加歌曲播放地址链接
+     * @param obj
+     * @returns {Promise.<void>}
+     */
+    async addPlayUrl(obj){
+        await this.page.evaluate(function() {
+            var nt = window.g_iframe.contentWindow.document.querySelectorAll('#content-operation .u-btni-addply');
+            nt[0].click();
+        });
+        await setTimeout(()=>{
+            obj.playUrl = this.musicUrl;
+            // 写入文件
+            fs.writeFile('song-'+ this.getSongId() +'.json', JSON.stringify(obj), function (err) {
+                console.log('write end ' + (err ? 'fail' : 'success'));
+            })
+        }, 3000);
     }
 
     /**
@@ -57,6 +84,30 @@ class getMusciInfo extends FetchBase{
      */
     getSongId(){
         return this.url.replace(/.*id=([0-9]*)/ig, '$1');
+    }
+
+    /**
+     * 资源请求时接口
+     * @param requestData
+     */
+    requestBeforeCB(requestData){
+        if(this.checkMp3){
+            if(/player\/url/.test(requestData.url)){
+                this.replayPlayUrl(requestData);
+            }
+        }
+    }
+
+    /**
+     * 重构歌曲地址请求
+     * @param requestData
+     * @returns {Promise.<void>}
+     */
+    async replayPlayUrl(requestData){
+        const page = await this.instance.createPage();
+        await page.open(requestData.url, 'POST', requestData.postData);
+        const content = await page.property('content');
+        this.musicUrl = content.replace(/.*(http:\/\/.*\.mp3).*/ig,'$1');
     }
 }
 //
